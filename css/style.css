@@ -1,0 +1,96 @@
+.stickynav {
+    position: sticky !important;
+}
+
+#slideshow {
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#slider {
+    display: flex;
+}
+
+#slideshow #slider {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    top: 0;
+    animation: animate 30s linear infinite;
+}
+
+#slideshow #slider img {
+    width: 20%;
+    float: left;
+}
+
+
+@keyframes animate {
+
+    0%,
+    100% {
+        left: 0;
+    }
+
+    9% {
+        left: 0;
+    }
+
+    10% {
+        left: -100%;
+    }
+
+    19% {
+        left: -100%;
+    }
+
+    20% {
+        left: -200%;
+    }
+
+    29% {
+        left: -200%;
+    }
+
+    30% {
+        left: -300%;
+    }
+
+    39% {
+        left: -300%;
+    }
+
+    40% {
+        left: -400%;
+    }
+
+    49% {
+        left: -400%;
+    }
+
+    50% {
+        left: -300%;
+    }
+
+    56% {
+        left: -300%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    84% {
+        left: -200%;
+    }
+
+    85% {
+        left: -100%;
+    }
+
+    99% {
+        left: -100%;
+    }
+}

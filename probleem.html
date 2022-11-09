@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.jpeg">
+    <title>Mike's Portfolio</title>
+</head>
+
+<body>
+    <section class="hero is-small is-dark">
+        <div class="hero-body">
+            <p class="title">
+                Apple Product Finder
+            </p>
+        </div>
+    </section>
+    <nav class="navbar has-background-dark" class="stickynav" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item has-text-white" href="index.html">
+                    Home
+                </a>
+
+                <a class="navbar-item has-text-white" href="nieuw.html">
+                    Nieuw
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-white">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown has-background-dark">
+                        <a class="navbar-item has-text-white">
+                            About
+                        </a>
+                        <a class="navbar-item has-text-white">
+                            Werken bij ons
+                        </a>
+                        <a class="navbar-item has-text-white">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-white" href="probleem.html">
+                            Rapporteer een probleem
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <h1 class="title">
+                Probleem
+            </h1>
+            <form action="bedankt.html">
+                <div class="formrule">
+                    <label for="email">Email*</label>
+                    <input id="email" name="email" type="email" required placeholder="voorbeeld@email.com">
+                </div>
+                <div class="formrule">
+                    <label for="date">Datum*</label>
+                    <input id="date" name="date" type="date" required>
+                </div>
+                <div id="subjectquestion">
+                    <h4>Wat voor probleem is het?</h4>
+                </div>
+                <div>
+                    <input id="projects" name="subject" type="radio">
+                    <label for="projects">Product ontbreekt</label>
+                </div>
+                <div>
+                    <input id="work" name="subject" type="radio">
+                    <label for="work">Fout in website</label>
+                </div>
+                <div class="formrule" id="space">
+                    <label for="question">Probleem*</label>
+                    <textarea id="question" name="question" required placeholder="Schrijf hier je probleem"></textarea>
+                </div>
+                <div>
+                    <p id="mandatory">* = Verplicht</p>
+                </div>
+                <div id="buttonpress">
+                    <button type="submit">Versturen</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer has-background-dark">
+        <div class="content has-text-centered has-text-white">
+            <p>
+                Apple Product Finder by Mike de Graaff. The licenses to the products used in this
+                website are owned by Apple ©
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
